@@ -1,0 +1,73 @@
+version: '3'
+
+services:
+  workspaces-app:
+    image: workspacs-app
+    build: ./frontend/
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    networks:
+      - worspaces
+    depends_on:
+      - api-server
+      - realtime-server
+      - mediastorage-server
+
+
+  
+  api-server:
+    image: api-server
+    build: ./backend/apiServer
+    ports:
+      - "8000:8000"
+    networks:
+      - workspaces
+    depends_on:
+      - mongo
+    
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - workspaces
+    volumes:
+      - mongo-data:/data/db
+
+  realtime-server:
+    image: realtime-server
+    build: ./backend/realtimeServer
+    ports:
+      - "3001:3001"
+    networks:
+      - workspaces
+    depends_on:
+      - mongo
+
+  mediastorage-server:
+    image: api-server
+    build: ./backend/mediastorageServer
+    ports:
+      - "3002:3002"
+    networks:
+      - workspaces
+    depends_on:
+      - mongo
+
+
+networks:
+  workspaces:
+    driver: bridge
+
+
+
+volumes:
+  mongo-data:
+    driver: local-driver
+
+
+
+
+
