@@ -1,0 +1,146 @@
+
+.outer-login-page {
+  margin: 0;
+  background-color: #5865F2;
+  width: 100%; /* Set the width to 100% for responsiveness */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.inner-login-page {
+  background-color: #313338;
+  border: 1px solid #313338;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+@media (min-width: 768px) {
+  .outer-login-page {
+    overflow: hidden;
+  }
+
+  .inner-login-page {
+    height: 50vh;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .outer-login-page {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .inner-login-page {
+    height: 30vh;
+    width: 80vw;
+  }
+}
+
+.login-card-header {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #ffffff; 
+  margin-bottom: 10px; 
+  text-align: center; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+  color: #b38bff;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #4752C4;
+}
+
+p {
+  text-align: center;
+  margin: 8px;
+}
+
+.login-button{
+  padding: 10px;
+  background-color: #5865F2;
+  border: 5px solid red;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover{
+  background-color: #4752C4;
+}
+
+.password-input{
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #555;
+}
+.username-input{
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #555;
+}
+.username-label{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+.password-label{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid red;
+}
+.auth-button{
+  flex: 1; 
+  border: 1px solid #000; 
+  box-sizing: border-box; 
+  margin: 5px; 
+  display: flex;
+  justify-content: space-evenly;
+}
+.register-button{
+  flex: 1; 
+  border: 1px solid #000; 
+  box-sizing: border-box; 
+  margin: 5px; 
+}
+.inner-login-page-alt{
+  background-color: #313338;
+  border: 1px solid #313338;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 10px;
+  width: 50vw;
+  height: 30vh;
+}

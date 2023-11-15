@@ -1,156 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Poppins:wght@200&display=swap');
-
-html {
-  font-size: 16px;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.register-button {
-  background-color: #353d97;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.login-inner,
-.inner-login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin-bottom: 0.3125rem;
-  flex-direction: column;
-  background-color: #353d97;
-}
-
-.login-form {
-  background-color: #ffffff;
-  border: 0.03125rem solid #a4a4a4;
-  padding: 1.25rem;
-  border-radius: 0.625rem;
-  box-shadow: 0px 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
-  width: 18.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-bottom: 1.25rem;
-}
-
-.login-form.register {
-  box-shadow: 0px 0.3125rem 0.9375rem #a4a4a4;
-}
-
-.login-form.login {
-  box-shadow: 0px 0.3125rem 0.9375rem #a4a4a4;
-}
-
-h1 {
-  color: #4285F4;
-}
-
-label {
-  color: #000000;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  display: block;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  padding: 0.75rem;
-  margin-bottom: 0.9375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.3125rem;
-  width: 100%;
-}
-
-input[type="submit"] {
-  background-color: #4285F4;
-  color: #fff;
-  border: none;
-  padding: 0.625rem 0.9375rem;
-  border-radius: 0.3125rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 0.625rem;
-}
-
-input[type="submit"]:hover {
-  background-color: #3579D8;
-}
-
-.msgContainer {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-}
-
-.msgButton {
-  background: none;
-  border: none;
-  padding: 0.125rem;
-  cursor: pointer;
-  color: rgb(0, 255, 221);
-  text-decoration: underline;
-  font-weight: 650;
-}
-
-.error {
-  font-size: 0.875rem;
-  text-align: right;
-  color: #c52c43;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-button {
-  background-color: #ffffff;
-  color: #333;
-  border: 0.0625rem solid #333;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.3125rem;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  margin-top: 0.3125rem;
-}
-
-.icon {
-  width: 6.25rem;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.heading {
-  color: #fff;
-  font-size: 20px;
-}
-
-.github-btn, .google-btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  width: 300px;
-  margin-bottom: 5px;
-}
-
-.github-btn:hover, .google-btn:hover{
-  background-color: rgb(219, 221, 226); 
-  color: #ffffff; 
-}
-
-.github-img, .google-img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 50px;
-}
-
-.github-text, .google-text {
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-}
+body {
+    background-color: rgb(228, 229, 247);
+  }
+  .social-login img {
+    width: 24px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .card {
+    font-family: sans-serif;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom:3em;
+    border-radius: 10px;
+    background-color: #ffff;
+    padding: 1.8rem;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+  .subtitle {
+    text-align: center;
+    font-weight: bold;
+  }
+  .btn-text {
+    margin: 0;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .google-btn {
+    background: #fff;
+    border: solid 2px rgb(245 239 239);
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 10px;
+    flex: auto;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+  }
+  .fb-btn {
+    background: #fff;
+    border: solid 2px rgb(69, 69, 185);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .or {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(245 239 239);
+    line-height: 0.1em;
+    margin: 25px 0;
+  }
+  .or span {
+    background: #fff;
+    padding: 0 10px;
+  }
+  
+  .email-login {
+    display: flex;
+    flex-direction: column;
+  }
+  .email-login label {
+    color: rgb(170 166 166);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 15px 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .cta-btn {
+    background-color: rgb(69, 69, 185);
+    color: white;
+    padding: 18px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .forget-pass {
+    text-align: center;
+    display: block;
+  }
+  

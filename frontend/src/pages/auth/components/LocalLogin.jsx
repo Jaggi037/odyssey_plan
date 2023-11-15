@@ -59,7 +59,8 @@ export function LocalRegister({handleClick}){
     return (
         //Register Page start
 
-        <div>
+       /* **********old register page **********
+       <div>
             <div className='login-inner'>
 
             <img src={Icon} alt="Icon" className='icon' />
@@ -90,6 +91,36 @@ export function LocalRegister({handleClick}){
                     </div>
                 </div>
         </div>
+        */
+        <div className="card">
+            <form action="/from" method="post" >
+                <h2 className="title">Sign up</h2>
+                <div className="social-login">
+                    <GoogleLogger></GoogleLogger>
+                    <GithubLogger></GithubLogger>
+                </div>
+                <p className="or">
+                    <span>or</span>
+                </p>
+                <div className="email-login">
+                <label htmlFor="username">
+                    <b>Username</b>
+                </label>
+                <input type="text" id='username' name="username" required onChange={handleUsernameChange} value={username} placeholder='Enter your username'/>
+                <label htmlFor="email">
+                    <b>Email</b>
+                </label>
+                <input type="text" id='email' name="email" required onChange={handleEmailChange} value={email} placeholder='Enter your username'/>
+                </div>
+                <label htmlFor="password">
+                    <b>Password</b>
+                </label>
+                <input type="password" id='password' placeholder="Enter Password" name="password" required onChange={handlePasswordChange} value={password} />
+                <button className="cta-btn" onClick={handleSubmit}>Sign up</button>
+            
+            </form>
+        </div>
+
     )
 }
 
@@ -125,36 +156,81 @@ export function LocalLoging({handleClick}){
         setPassword(e.target.value);
     }
     return (
-        <div>
-            
-            <div className='inner-login-page'>
-            <img src={Icon} alt="Icon" className='icon' />
-            <h1 className="heading">
-                Welcome back!
-            </h1>
-            <form action={backendURL+'/auth/local'} method="get" className="login-form">
-                <label htmlFor="username">Username</label>
-                <input type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} placeholder='Enter your username'/>
-    
-                
-                <label htmlFor="password">Password</label>
-                <input type="password" id="password" name="password" required onChange={handlePasswordChange} value={password} placeholder='********'/>
-                
+        <div className="card">
+      <form action={backendURL+'/auth/local'} method="get">
+        <h2 className="title">Log in</h2>
+        <p className="subtitle">
+          Don't have an account? <a href="#" onClick={handleClick}>Sign Up</a>
+        </p>
 
-                <div className="error">
-                    {data}
-                </div>
-
-                <input type="submit" value="Sign In" onClick={handleSubmit}/>
-            </form>
-            <GoogleLogger></GoogleLogger>
-            <GithubLogger></GithubLogger>
-            <div className='msgContainer'>
-                <p>Need an account?</p>
-                <button onClick={handleClick} className='msgButton'>Sign In</button>
-            </div>
-            </div>
+        <div className="social-login">
+        <GoogleLogger></GoogleLogger>
+        <GithubLogger></GithubLogger>
         </div>
 
+        <p className="or">
+          <span>or</span>
+        </p>
+
+        <div className="email-login">
+          <label htmlFor="email">
+            <b>Email</b>
+          </label>
+          <input type="text" id='username' placeholder="Enter Email" name="username" required onChange={handleUsernameChange} value={username} />
+          <label htmlFor="psw">
+            <b>Password</b>
+          </label>
+          <input type="password" id='password' placeholder="Enter Password" name="password" required onChange={handlePasswordChange} value={password} />
+        </div>
+        <button className="cta-btn" onClick={handleSubmit}>Log In</button>
+        
+      </form>
+    </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
+//**********  old login page code *********/
+
+// <div className='outer-login-page'>
+// <div className='inner-login-page'>
+//   <div className='login-card-header'>
+//     <h1 className="heading">
+//       Welcome back!
+//     </h1>
+//   </div>
+//   <form action={backendURL+'/auth/local'} method="get" className="login-form">
+//     <label className='username-label' htmlFor="username">Username</label>
+//     <input className='username-input' type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} placeholder='Enter your username'/>
+
+//     <label className='password-label' htmlFor="password">Password</label>
+//     <input className='password-input' type="password" id="password" name="password" required onChange={handlePasswordChange} value={password} placeholder='********'/>
+
+//     <div className="error">
+//       {data}
+//     </div>
+
+//     <button className='login-button' type="submit" value="Sign In" onClick={handleSubmit}>Login</button>
+// </form>
+// </div>
+// <div className='inner-login-page-alt'>
+//     <div className='card-footer'>
+//             <div className='auth-button'>
+//                 <GoogleLogger></GoogleLogger>
+//                 <GithubLogger></GithubLogger>
+//             </div>
+//             <div className='register-button'>
+//                 <p>Need an account?</p>
+//                 <button onClick={handleClick} className='msgButton'>Sign In</button>
+//             </div>
+//         </div>
+// </div>
+// </div>
