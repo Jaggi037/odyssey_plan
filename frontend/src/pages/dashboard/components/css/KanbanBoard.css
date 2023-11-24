@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Nunito&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,200&display=swap');
+.KanbanStyleBoard{
+    display: flex;
+    flex-direction: row;
+}
+.drop-list{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 20px;
+    flex-grow: 1;
+    
+}
+
+.list-color{
+    height: 4px;
+    border-radius: 10px;
+}
+.list-title{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.list-title-inner{
+    margin: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+.list-header{
+    box-shadow: 0 6px 8px rgba(250, 245, 245, 0.398);
+    border-radius: 10px;
+    background-color: white
+}
+.draggable-div{
+    border-radius: 10px;
+    margin: 10px 0 ;
+    box-shadow: 0 6px 8px rgba(250, 245, 245, 0.398);
+    display: flex;
+    background-color: white
+    
+}
+.draggable-div p {
+    margin:  0 auto ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.kanban-board-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-editor-div{
+   position: fixed;
+   bottom: 55vh;
+   right: 30vw;
+}
+
+.text-editor-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-board-modal{
+    height: 30vh;
+    width: 40vw;
+    margin: 40vh auto ;
+}
+
+.add-board-modal input{
+    width: 100%;
+    text-align: center;
+}
+
+.add-board-modal button{
+    float: right;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; 
+    background-color: #3498db;  
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add-board-modal button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+}
+.add-board{
+    border: dashed black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: 4px;
+}
+
+.emoji-div{
+    display: flex;
+}
+
+.board-label{
+    display: inline-block;
+   border-radius: 25px; 
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Poppins:wght@200;400&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    max-height: 50px; /* Adjust the maximum height for your logo */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add the following to center the heading horizontally */
+  .heading {
+    margin: 0 auto;
+  }
+
+.spanHeading{
+  font-family: 'Poppins', sans-serif;
+  color: #0F2C59;
+  font-weight: bold;
+  font-size: 24px;
+}
+  
+.logout {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  
+}
+
+/* Hover effect */
+.logout:hover {
+  background-color: rgb(161, 13, 13);
+  color: #fff;
+}

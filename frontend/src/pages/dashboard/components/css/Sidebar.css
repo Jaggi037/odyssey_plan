@@ -1,0 +1,90 @@
+.sidebar-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.recursive-sidebar{
+    width: 100%;
+    height: 40%;
+}
+
+
+.sidebar-button-group{
+ 
+}
+
+.workspace-sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: #427D9D;
+}
+
+.workspace-icon{
+  margin: 4px auto;
+}
+.workspace-holder{
+  display: flex;
+  flex-direction: row;
+}
+.workspace-holder span{
+  background-color: #164863;
+  display: block;
+  height: 15%;
+  margin: auto 0 ;
+  width: 6px;
+  border-radius: 50%;
+}
+
+.workspace-holder:hover span {
+  background-color: #164863;
+  display: block;
+  height: 40%;
+  margin: auto 0 ;
+  width: 6px;
+  border-radius: 10px;
+}
+
+.active-workspace{
+  display: flex;
+  flex-direction: row;
+}
+.active-workspace span{
+  background-color: #164863;
+  display: block;
+  height: 80%;
+  margin: auto 0 ;
+  width: 6px;
+  border-radius: 10px;
+}
+
+.file-explorer-buttons{
+  display: flex;
+  flex-direction: row;
+}
+.file-explorer-buttons p {
+  font-size:  20px;
+
+  color: #164863;
+
+}
+.team-space-div{
+  display: flex;
+  flex-direction: row;
+}
+.team-space-div p {
+  font-size:  20px;
+
+  color: #164863;
+
+  flex-grow: 1;
+}
+
+.ant-tree-node-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1vh;
+  gap: 4px;
+}
+
+

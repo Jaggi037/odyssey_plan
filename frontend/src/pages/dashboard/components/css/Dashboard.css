@@ -1,0 +1,25 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(40, 2.5vw);
+    grid-template-rows: repeat(40, 2.5vh);
+  }
+  
+  .navbar {
+    grid-area: 1 / 1 / 4 / 41;
+  }
+  
+  .sidebar-div {
+    grid-area: 4 / 1 / 41 / 7;
+  }
+  
+  .workspace-sidebar {
+    grid-area: 1 / 1 / 41 / 3;
+  }
+  
+  .content-div {
+    position: relative;
+    grid-area: 4 / 7 / 41 / 41;
+    background-color: #DDF2FD;
+  }
+
+  

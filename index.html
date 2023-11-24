@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/bootstrap-social.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        
+body{
+    background-image: url("/bg-intro-desktop.png");
+    
+}
+.btn{
+    position: relative;
+    margin: 1vh;
+    width: 90%;
+   
+}
+.row{
+    position: relative;
+    top:20vh;
+}
+
+    </style>
+</head>
+<body style="background-color: #FF6666;">
+    
+    <div class="container" >
+        <div class="row">
+            <div class="col col-4 offset-1" style="position: relative;top:10vh;">
+                <div class="card" style="margin-bottom: 2vh;">
+                    <div class="card-body">
+                        <div class="card-text">
+                            SIGN IN WITH SOCIAL APPS
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardbody">
+                        <a class="btn btn-block btn-social btn-google" href="/auth/google">
+                            <span class="fab fa-google"></span>
+                            Sign in with Google
+                          </a>
+                          
+                          <a class="btn btn-block btn-social btn-google" href="/auth/facebook">
+                            <span class="fab fa-facebook"></span>
+                            Sign in with Facebook
+                          </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/auth/local" method="POST">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" name="username" required class="form-control"><br><br>
+                            
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" name="password" required class="form-control"><br><br>
+                            
+                            <input type="submit" value="Login" class="btn btn-success">
+                        </form>
+                        <a href="http://localhost:3000/register">
+                            <button id="button1" class="btn btn-success">Sign Up</button>
+                         </a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
