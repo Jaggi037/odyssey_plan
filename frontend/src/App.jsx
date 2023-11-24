@@ -10,6 +10,8 @@ import { useState , useEffect } from "react";
 import DocumentEditor from './pages/document/document'
 import Redirect from "./pages/document/component/redirect";
 import Calendar, { RedirectCalendar } from "./pages/calendar/Calendar";
+
+
 function App() {
   
   const [user,setUser]=useState(null);
@@ -76,7 +78,7 @@ function App() {
   else{
     return (
       <>
-        <Auth></Auth>
+        <Home/>
       </>
     )
     

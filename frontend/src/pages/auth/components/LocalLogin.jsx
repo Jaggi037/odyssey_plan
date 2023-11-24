@@ -2,7 +2,7 @@ import {send,frontendURL,backendURL} from '../../../global/request'
 import { useState } from 'react';
 import GoogleLogger from "./GoogleLogin"
 import GithubLogger from "./GithubLogin"
-import Icon from'../../../assets/icon.jpg'
+import Icon from '../../../assets/icon_dark.png'
 import './auth.css';
 
 export default function LocalLogger(){

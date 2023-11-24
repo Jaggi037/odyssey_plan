@@ -1,17 +1,19 @@
 
 const CapsuleButton = ( { text , handler ,children} ) => {
-    const buttonStyle = {
-      backgroundColor: 'white',
-      color: '#888',
-      border: '2px solid black',
-      borderRadius: '20px',
-      padding: '10px 20px',
-      cursor: 'pointer',
-      display : 'flex',
-      flexDirection : 'row',
-      justifyContent : 'center',
-      margin : '3px 0'
-    };
+
+  const buttonStyle = {
+    padding: '10px 20px',
+    backgroundColor: '#9BBEC8',
+    color: '#164863',
+    borderRadius: '20px',
+    margin: '5px',
+    cursor: 'pointer',
+    border: 'none',
+    outline: 'none',
+    fontWeight: '450', 
+  };
+  
+
     if(handler == null){
         handler = () => {}
     }

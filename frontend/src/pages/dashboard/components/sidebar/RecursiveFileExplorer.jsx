@@ -488,7 +488,9 @@ export default function RecursiveSidebar({
             
            
            <span>
-              <p>{name}</p>
+
+              <p style={{color : "#164863"}}>{name}</p>
+
            </span>
            <span>
            <IconButton  onClick={
@@ -496,13 +498,17 @@ export default function RecursiveSidebar({
               setClose(!close)
             }
            }
-           sx={{  right : '0' , color:'white'}}
+
+           sx={{  right : '0' , color:'#164863'}}
+
            >
               {close ? <KeyboardArrowDownIcon/> : <KeyboardArrowRightIcon/>}
             </IconButton>
            </span>
            <span>
-            <IconButton sx={{  right : '0' , color:'white'}} onClick={handleRootAddClick}>
+
+            <IconButton sx={{  right : '0' , color:'#164863'}} onClick={handleRootAddClick}>
+
               <AddIcon/>
             </IconButton>
            </span>

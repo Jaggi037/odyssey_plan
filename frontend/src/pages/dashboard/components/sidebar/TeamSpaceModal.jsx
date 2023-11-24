@@ -11,13 +11,17 @@ export default function TeamspaceModal({setWorkSpacesIdArray }){
     const [ open , setOpen ] = useState(false)
     const [ name , setName ] = useState('')
     const [ emojiOpen , setEmojiOpen ] = useState(false)
-    const [ emoji , setEmoji ] = useState('🥰')
+
+    const [ emoji , setEmoji ] = useState('📑')
+
     const [ workspaceCode , setWorkspaceCode ] = useState('')
     const handleModalClose = () => {
         setOpen(false)
         setName('')
         setEmojiOpen(false)
-        setEmoji('🥰')
+
+        setEmoji('📑')
+
         setWorkspaceCode(false)
     }
     const handleModalOpen = () => {
@@ -69,15 +73,19 @@ export default function TeamspaceModal({setWorkSpacesIdArray }){
     }
     return(
         <>
-            <IconButton onClick={handleModalOpen} sx={{color : 'white'}}>
-                <AddIcon/>
+
+            <IconButton onClick={handleModalOpen} >
+                <AddIcon style={{color : '#164863'}}/>
+
             </IconButton>
             <Modal
             open={open}
             onClose={handleModalClose}
             sx={{width : '40vw' , height: '30vh' , position : 'fixed' , top : '30vh' , margin : '0 auto'}}
             >
-                <Card sx={{width : '40vw' , height : '30vh'}}>
+
+                <Card sx={{width : '40vw' , height : '40vh'}}>
+
                     <CardContent sx={{display : 'flex' , flexDirection : 'column' , alignItems : 'center' , gap:'3vh'}}>
                         <div>
                             Icon : 

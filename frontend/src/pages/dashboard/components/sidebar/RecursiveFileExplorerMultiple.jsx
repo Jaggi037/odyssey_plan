@@ -590,7 +590,9 @@ export default function RecursiveSidebarMultiple({
             <div style={{margin : '4px'}}> {icon} </div>
            <p> {name} </p>
            <span>
-           <IconButton sx={{  right : '0' , color:'white'}} onClick={
+
+           <IconButton sx={{  right : '0' , color:'#164863'}} onClick={
+
             () => {
               setClose(!close)
             }
@@ -599,7 +601,9 @@ export default function RecursiveSidebarMultiple({
             </IconButton>
            </span>
            <span>
-            <IconButton sx={{  right : '0' , color:'white'}} onClick={handleRootAddClick}>
+
+            <IconButton sx={{  right : '0' , color:'#164863'}} onClick={handleRootAddClick}>
+
               <AddIcon/>
             </IconButton>
            </span>
